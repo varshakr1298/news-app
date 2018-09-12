@@ -1,0 +1,268 @@
+body {
+    background: #20425e;
+    background: teal;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+}
+
+.cntent {
+    padding: 0px 10px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-transform: translate();
+    transform: translate();
+}
+
+newsview {
+    width: 100%;
+}
+
+.feedview h4 {
+    color: white;
+}
+
+input[type=text] {
+    color: black;
+}
+
+input[type=text]:focus.serchcriteria {
+    display: block;
+}
+
+h1,
+h2,
+h6,
+h3,
+p {
+    font-faily: 'Oswald', sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(172, 148, 17, 0.74), rgba(0, 0, 0, 0.082)), url(../../assets/images/3.png);
+    background: linear-gradient(rgba(25, 99, 88, 0.74), rgba(15, 15, 15, 0.383)), url(../../assets/images/3.png);
+    background: linear-gradient(rgba(68, 50, 12, 0.698), rgba(15, 15, 15, 0.383)), url(../../assets/images/3.png), url(../../assets/images/2.jpg);
+    backgound: linear-gradient(rgba(70, 62, 7, 0.493), rgba(8, 73, 122, 0.52)), url(../../assets/images/3.png), url(../../assets/images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+    padding: 0px;
+    color: white;
+}
+
+#heading {
+    background: rgba(40, 59, 51, 0.445);
+    background: rgba(58, 40, 5, 0.075);
+    background: rgba(58, 40, 5, 0.075);
+    background: rgba(247, 244, 244, 0.911);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.945);
+    height: auto;
+    color: rgb(99, 98, 98);
+    margin: 1% -1% 0% 0%;
+    padding: 10px;
+}
+
+.kingdom {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(73, 74, 88);
+}
+
+.btn {
+    colo: black;
+    margin: 2% 0% 0% 80%;
+    width: 30%;
+}
+
+#newsform {
+    position: absolute;
+    top: 50%;
+    color: white;
+    color: rgb(83, 83, 83);
+    margin: -4% 0% 0% 0%;
+    width: 100%;
+    background: #ecf2f5d5;
+    height: 200px;
+    border-top: 1px solid rgba(255, 255, 255, 0.623);
+}
+
+label {
+    margin-left: 80px;
+    font-family: Oswald;
+}
+
+.mlist {
+    display: inline-table;
+    width: 70%;
+    min-height: 80px;
+}
+
+.newsproviders li {
+    font-family: Oswald;
+    list-style-type: none;
+    font-size: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.newsproviders ul {
+    height: 20px;
+    box-shadow: 1px 2px 4px rgb(27, 27, 27);
+    width: 20px;
+}
+
+.newsproviders li:hover {
+    color: red;
+    cursor: pointer;
+    background: ORANGE;
+}
+
+.newsproviders ul li {
+    background: none;
+}
+
+.newsproviders li:nth-child(1) {
+    background: blue;
+}
+
+.serchcriteria {
+    margin: 0% 20%;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+#togg {
+    box-shadow: 0px 0px 2px #16636d;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#text6 {
+    background-size: cover;
+    box-shadow: 1px 2px 4px grey;
+    height: 100%;
+    width: 100%;
+}
+
+div#header2 {
+    background: rgba(68, 80, 80, 0.24);
+    height: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 344px 0px 342px 0px;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.616);
+}
+
+#req {
+    box-shadow: 1px 2px 4px grey;
+}
+
+#header2 p {
+    float: left;
+    margin: 0px 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#eader2 p:after {
+    background: rgba(40, 59, 51, 0.445);
+    content: " ";
+    display: inline-block;
+    width: 50px;
+    padding: 10px;
+}
+
+ul li {
+    backgrond: black;
+    background: rgb(8, 8, 8);
+    background: rgb(8, 8, 8);
+    background: linear-gradient(rgb(10, 30, 32), rgba(230, 225, 225, 0.548));
+    background: linear-gradient(rgb(27, 10, 32), rgba(230, 225, 225, 0.548));
+    background: linear-gradient(rgb(27, 10, 32), rgba(230, 225, 225, 0.212));
+    background: linear-gradient(rgb(8, 22, 37), rgba(230, 225, 225, 0.212));
+    color: white;
+    height: 330px;
+    overflow: hidden;
+}
+
+.europe ul li p {
+    color: white;
+    padding-bottom: 0px;
+    font-size: 15px;
+}
+
+.europe,
+.asia,
+.africa,
+.currency,
+.music,
+.movies,
+.uae,
+.premierleague ul li img {
+    backgroud: black;
+    color: white;
+    min-width: 200px;
+}
+
+ul {
+    backgrund: black;
+    backgrund: rgb(7, 5, 15);
+    backgrund-image: linear-gradient( rgba(230, 225, 225, 0.4), rgb(40, 67, 68)), url(../../assets/images/vector.jpg);
+}
+
+.europe,
+.asia,
+.africa,
+.currency,
+.music,
+.movies,
+.uae,
+.premierleague ul {
+    padding-top: 20px;
+    float: left;
+    background: black;
+    background: rgb(7, 5, 15);
+    background-image: linear-gradient( rgba(230, 225, 225, 0.4), rgb(40, 67, 68)), url(../../assets/images/vector.jpg);
+}
+
+.footer {
+    min-height: 80px;
+    width: 100%;
+    background: black;
+    height: 100px;
+}
+
+.footer p {
+    margin-right: 30px;
+}
+
+h1 {
+    color: white;
+}
+
+.customSearch {
+    animation: search 2s ease-in-out infinite;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes search {
+    0% {
+        transform: scale(1) translateY(0)
+    }
+    100% {
+        transform: scale(1.01) translateY(0)
+    }
+}

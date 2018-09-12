@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transform: translate();
+}
+
+input[type=text] {
+    color: black;
+}
+
+h1,
+h2,
+h6,
+h3,
+p {
+    font-family: 'Oswald', sans-serif;
+}
+
+#heading {
+    background: rgba(40, 59, 51, 0.445);
+    height: 50px;
+    margin: 1.3% -1% 0% 0%;
+}
+
+#newsform {
+    margin: -2% 0% 0% 0%;
+    width: 100%;
+    background: rgb(49, 48, 48);
+}
+
+label {
+    margin-left: 80px;
+    font-family: Oswald;
+}
+
+#btn {
+    color: black;
+}
+
+ul {
+    display: none;
+    -webkit-box-shadow: 1px 2px 4px grey;
+    box-shadow: 1px 2px 4px grey;
+}
+
+li {
+    font-family: Oswald;
+    list-style-type: none;
+    font-size: 20px;
+    width: 50%;
+}
+
+li:hover {
+    color: red;
+    cursor: pointer;
+    background: ORANGE;
+}
+
+li:nth-child(1) {
+    background: blue;
+}
+
+.btn {
+    margin: 8% 0% 0px 50%;
+}
+
+.serchcriteria {
+    margin: 0% 20%;
+}
+
+.active {
+    display: block;
+}
+
+#togg {
+    -webkit-box-shadow: 1px 2px 4px rgb(22, 99, 109);
+    box-shadow: 1px 2px 4px rgb(22, 99, 109);
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#text6 {
+    background: url(../../assets/images/news2.jpg);
+    background-size: cover;
+    -webkit-box-shadow: 1px 2px 4px grey;
+    box-shadow: 1px 2px 4px grey;
+    height: 100%;
+    width: 100%;
+}
+
+#req {
+    -webkit-box-shadow: 1px 2px 4px grey;
+    box-shadow: 1px 2px 4px grey;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+#header {
+    width: 100%;
+    height: 300px;
+    background: url("../../assets/images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+    padding: 0px;
+}
+
+#header2 p {
+    float: left;
+    margin: 0px 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#eader2 p:after {
+    background: rgba(40, 59, 51, 0.445);
+    content: " ";
+    display: inline-block;
+    width: 50px;
+    padding: 10px;
+}

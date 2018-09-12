@@ -1,0 +1,71 @@
+<div id="header">
+
+    <h1 id="heading" class="text-center">KINGDOM NEWS CENTER</h1>
+    <div id="header2">
+        <p>Home</p>
+        <p>About Us</p>
+
+        <p>News</p>
+        <p>Contact Us</p>
+
+    </div>
+</div>
+<p>
+    <br/>
+</p>
+<form id="newsform" class="form-group">
+    <div class="row">
+        <div class="col-md-12 serchcriteria">
+            <div class="col-md-4">
+                <label>
+              <h4>SEARCH CRETERIA:</h4>
+            </label>
+                <label for="SERCH BY">
+              <h4>Latest Headlines</h4>
+            </label>
+
+                <input type="checkbox" class="topp" value="latest" disabled>
+            </div>
+            <div class="col-md-4">
+                <label for="SERCH BY">
+              <h4>Top Headlines</h4>
+            </label>
+                <input type="checkbox" class="topp" value="top">
+            </div>
+        </div>
+        <div class="col-md-12">
+
+            <div class="col-md-4">
+                <h3 id="togg">select a provider</h3>
+                <ul>
+
+                    <li>bbc-news</li>
+                    <li>al-jazeera-english</li>
+                    <li>abc-news-au</li>
+                    <li>ars-technica</li>
+                    <li>cnbc</li>
+                    <li>espn</li>
+                    <li>entertainment-weekly</li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <label for="NEWS PR">
+              <h4>NEWS PROVIDER</h4>
+            </label>
+
+                <input type="text" [(ngModel)]="search" name="search" class="form-control" placeholder="search news by word ..eg..Donald-Trump">
+            </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary btn-block" (click)="loadSearch()">
+            <h4>search</h4>
+          </button>
+        </div>
+    </div>
+
+</form>

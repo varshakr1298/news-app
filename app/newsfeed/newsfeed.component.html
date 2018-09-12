@@ -1,0 +1,301 @@
+<div id="header">
+
+    <h1 id="heading" class="text-center"> <strong class="kingdom">KINGDOM NEWS CENTER</strong>
+
+    </h1>
+
+    <h4 class="text-center"> the Biggest News Hub in the world!!!</h4>
+    <div id="header2">
+        <p>Home</p>
+        <p>About Us</p>
+
+        <p>News</p>
+        <p>Contact Us</p>
+
+    </div>
+</div>
+<p>
+    <br/>
+</p>
+<form id="newsform" class="form-group">
+    <div class="row">
+        <div class="col-md-12 serchcriteria">
+            <div class="col-md-4">
+                <label>
+          <h4>SEARCH CRETERIA:</h4>
+        </label>
+                <label for="SERCH BY">
+          <h4>Latest Headlines</h4>
+        </label>
+
+                <input type="checkbox" class="topp" value="latest" disabled>
+            </div>
+            <div class="col-md-4">
+                <label for="SERCH BY">
+          <h4>Top Headlines</h4>
+        </label>
+                <input type="checkbox" class="topp" value="top">
+            </div>
+        </div>
+        <div class="col-md-12">
+
+            <div class="col-md-4">
+                <h4 id="togg" (click)="showDropdown()">select a provider</h4>
+                <div *ngIf="drop" class="dropdown">
+                    <ul (click)="closeDropdown()" class="newsproviders">
+
+                        <li>bbc-news</li>
+                        <li>al-jazeera-english</li>
+                        <li>abc-news-au</li>
+                        <li>ars-technica</li>
+                        <li>cnbc</li>
+                        <li>espn</li>
+                        <li>entertainment-weekly</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="NEWS PR">
+          <h4>NEWS PROVIDER</h4>
+        </label>
+
+                <input type="text" [(ngModel)]="search" name="search" class="form-control" placeholder="search news by word ..eg..Donald-Trump">
+            </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary btn-block" (click)="loadSearch()">
+        <h4>search</h4>
+      </button>
+        </div>
+    </div>
+
+</form>
+
+<div class="feedview">
+    <h4 *ngIf="europe.length == null" class="text-center">
+        <i class="fa fa-spinner fa-pulse fa-2x fa-w">
+      <span class="sr-only">loading</span>
+    </i> News Results Loading plz Wait..... </h4>
+    <h4 *ngIf="timeup"> plz check your internet connection and try again..... </h4>
+
+
+    <h4 *ngIf="europe.length > 0" class="text-center"> News Results For {{search}} Ready </h4>
+
+</div>
+
+<!--europe-->
+<h1 class="text-center"> {{searchTitle}} LATEST NEWS</h1>
+<section class="europe">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of europe">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+    <h4 *ngIf="customSearch" class="text-center customSearch"> END OF SEARCH RESULTS FOR {{searchTitle}}</h4>
+</section>
+
+<hr>
+
+<h1 class="text-center"> UNITED ARAB EMIRATES LATEST NEWS</h1>
+
+<section class="uae">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of uae">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+</section>
+
+<hr>
+<h1 class="text-center">ASIA LATEST NEWS</h1>
+
+<section class="asia">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of asia">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+</section>
+
+<hr>
+<h1 class="text-center">AFRICA LATEST NEWS</h1>
+
+<section class="africa">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of africa">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+</section>
+
+
+<hr>
+<h1 class="text-center">CURRENCY LATEST NEWS</h1>
+
+<section class="currency">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of currency">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+
+</section>
+
+<h1 class="text-center">FASHION & DESIGN LATEST NEWS</h1>
+
+<section class="currency">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of fashion">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+</section>
+
+
+
+<hr>
+<h1 class="text-center">MUSIC LATEST NEWS</h1>
+
+<section class="music">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of music">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+</section>
+
+
+<hr>
+<h1 class="text-center">MOVIES LATEST NEWS</h1>
+
+<section class="movies">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of movies">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+</section>
+
+
+
+<hr>
+<h1 class="text-center">PREMIER LEAGUE LATEST NEWS</h1>
+
+<section class="premierleague">
+    <ul class="col-ms-6 col-md-3 feed" *ngFor="let news of premierleauge">
+        <a href="{{news.url}}" target="_blank">
+            <li class="list-group-item mylist">
+
+                <h4 class="text-center">{{news.title}}</h4>
+                <div class="image">
+                    <img class="img-responsive" src="{{news.urlToImage}}" />
+                </div>
+
+                <span class="badge">{{news.author}}</span>
+                <br>
+                <p>{{news.description}}</p>
+            </li>
+        </a>
+    </ul>
+
+</section>
+
+<section class="footer">
+    <div class="col-md-12">
+        <h4>&copy; copyright Kingdom Group, All rights Reserved. 2017 </h4>
+
+        <p class="pull-right">Designed & Developed by Newtorn Moses L</p>
+    </div>
+</section>
